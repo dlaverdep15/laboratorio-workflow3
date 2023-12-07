@@ -1,0 +1,16 @@
+name: leyendo otro pipeline
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  nuevo-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ejecutar el pipeline anterior de node.js
+        uses: dlaverdep15@repo-de-acciones@v1
+        with:
+          repo-url: https://github.com/dlaverdep15/laboratorio-workflow3.git
+          workflow-path: .github/workflows/pipeline.yml

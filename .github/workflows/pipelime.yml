@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Se clona el codigo de mi repo
-        uses: .github/workflows/pipeline.yml
+      - name: Ejecutar pipeline node.js
+        uses: dlaverdep15/laboratorio-workflow2
+
 
 

@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Ejecutar pipeline node.js
-        uses: dlaverdep15/laboratorio-workflow2
+        uses: dlaverdep15/laboratorio-workflow2/.github/workflows/pipeline.yml@main
 
 
 

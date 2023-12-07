@@ -14,7 +14,7 @@ jobs:
 
       - name: Ejecucion del pipeline del repo source
         run: |
-
-          chmod +x .github/workflows/pipeline.yml
-          .github/workflows/pipeline.yml
+          cd .github/workflows/laboratorio-workflow2
+          chmod +x pipeline.yml
+          .pipeline.yml
 

@@ -5,12 +5,10 @@ on:
     branches:
       - main
 jobs:
-  nuevo-build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Ejecutar pipeline node.js
-        uses: dlaverdep15/laboratorio-workflow2/.github/workflows/pipeline.yml@main
+  call_workflow:
+    name: nodepipeline
+    uses: dlaverdep15/laboratorio-workflow2/.github/workflows/pipeline.yml@main
+        
 
 
 

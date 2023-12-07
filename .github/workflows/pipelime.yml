@@ -9,8 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ejecutar el pipeline anterior de node.js
-        uses: dlaverdep15@repo-de-acciones@v1
-        with:
-          repo-url: https://github.com/dlaverdep15/laboratorio-workflow3.git
-          workflow-path: .github/workflows/pipeline.yml
+      - name: Se clona el codigo de mi repo
+        uses: actions/checkout@v2
+
+      - name: Ejecucion del pipeline del repo source
+        run: |
+          cd laboratorio-workflow2
+
+          chmod +x .github/workflows/pipeline.yml
+          .github/workflows/pipeline.yml
+
